@@ -55,7 +55,7 @@ gboolean display_late_setup(void);
 void display_early_cleanup(void);
 
 /**
- * Cleanup any remaining display related stuff
+ * Cleanup any remaining dsplay related stuff
  */
 void display_cleanup(void);
 
