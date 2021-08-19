@@ -28,7 +28,7 @@
 #ifndef ROFI_HELPER_THEME_H
 #define ROFI_HELPER_THEME_H
 #include "theme.h"
-#include <pango/pango.h>
+#include <pango/pango.h
 /**
  * @defgroup HELPERS Helpers
  * @{
