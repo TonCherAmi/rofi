@@ -2,8 +2,9 @@ name: Build CI
 
 on:
   pull_request:
-    paths: "**.h"
-    paths: "**.c"
+    - paths: "**.h"
+    - paths: "**.c"
+
 
 jobs:
   build.gcc:
