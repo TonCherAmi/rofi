@@ -1,0 +1,52 @@
+name: Build CI
+
+on:
+  pull_request:
+    paths: "**.h"
+    paths: "**.c"
+
+jobs:
+  build.gcc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v1
+        with:
+          python-version: '3.x'
+      - run: >
+          sudo apt install -y
+            discount
+            doxygen
+            fluxbox
+            gdb
+            graphviz
+            jq
+            lcov
+            libpango1.0-dev
+            libstartup-notification0-dev
+            libxcb-ewmh-dev
+            libxcb-icccm4-dev
+            libxcb-randr0-dev
+            libxcb-util0-dev
+            libxcb-xinerama0-dev
+            libxcb-xkb-dev
+            libxcb-xrm-dev
+            libxcb-cursor-dev
+            libxkbcommon-dev
+            libxkbcommon-dev
+            libxkbcommon-x11-dev
+            ninja-build
+            python3-pip
+            python3-setuptools
+            python3-wheel
+            texi2html
+            texinfo
+            xdotool
+            xfonts-base
+            xterm
+            xutils-dev
+      - run: pip install meson ninja
+      - run: meson setup builddir
+        env:
+          CC: gcc
+      - run: ninja
