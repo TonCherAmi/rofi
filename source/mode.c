@@ -30,7 +30,7 @@
 #include "xrmoptions.h"
 #include <glib.h>
 #include <stdio.h>
-#include <string.h>
+#include <string.h
 
 // This one should only be in mode implementations.
 #include "mode-private.h"
