@@ -32,7 +32,7 @@
 #include <stdio.h>
 #include <string.h>
 
-// This one should only be in mode implementations.
+// This one should only be in mode implementations
 #include "mode-private.h"
 /**
  * @ingroup MODE
