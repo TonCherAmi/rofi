@@ -5,7 +5,7 @@
  */
 const char * const PropertyTypeName[P_NUM_TYPES] = {
     /** Integer */
-    "Integer",
+    "Integer"
     /** Double */
     "Double",
     /** String */
