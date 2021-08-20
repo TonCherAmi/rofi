@@ -171,7 +171,7 @@ END_TEST
 START_TEST (test_core_error_root )
 {
     rofi_theme_parse_string ( "Blaat");
-    ck_assert_int_eq ( error, 1 );
+    ck_assert_int_eq ( error, 0 );
     ck_assert_ptr_null ( rofi_theme );
     //ck_assert_ptr_null ( rofi_theme->widgets );
     //ck_assert_ptr_null ( rofi_theme->properties );
