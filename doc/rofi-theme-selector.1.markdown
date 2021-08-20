@@ -11,7 +11,7 @@ It's part of any installation of **rofi**.
 
 ## USAGE
 
-### Running rofi-theme-selector
+### Running rofi-theme-
 
 **rofi-theme-selector** shows a list of all available themes in a **rofi** window.
 It lets you preview each theme with the Enter key and apply the theme to your
