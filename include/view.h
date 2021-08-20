@@ -295,7 +295,7 @@ void __create_window(MenuFlags menu_flags);
 xcb_window_t rofi_view_get_window(void);
 /** @} */
 
-/***
+/**
  * @defgroup ViewThreadPool ViewThreadPool
  * @ingroup View
  *
@@ -335,5 +335,5 @@ void rofi_view_set_window_title(const char *title);
  * set ellipsize mode to start.
  */
 void rofi_view_ellipsize_start(RofiViewState *state);
-/**@}*/
+/** @} */
 #endif
